@@ -54,9 +54,6 @@ for root, dirs, files in os.walk(directory):
                     try:
                         data = yaml.safe_load(f)
                         environment_variables = data.get("environmentVariables", [])
-                        # print(file_path,environment_variables)
-                        # if not environment_variables:
-                        #     continue
                         for env_var in environment_variables:
                             key = env_var.get("name")
                             if key:
@@ -65,5 +62,5 @@ for root, dirs, files in os.walk(directory):
                     except yaml.YAMLError as e:
                         print(f"Error parsing YAML file: {file_path}")
                         print(e)
-            main_list = list(set(env_vars)-set(matching_keys))
-            print(main_list)
+            mismatch_list = list(set(env_vars)-set(matching_keys))
+            print(mismatch_list)
