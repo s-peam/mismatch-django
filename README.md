@@ -33,3 +33,19 @@ This code is written in Python and aims to search for specific patterns and extr
 1. Update the **`directory`** variable in the code to specify the directory path you want to search in.
 2. Install the required **`pyyaml`** library (if not already installed) by running **`pip install pyyaml`** in your Python environment.
 3. Run the script using Python: **`python main.py`**.
+
+## Results
+```
+--------------------------------------------
+values-qa.yaml
+--------------------------------------------
+['WEB_CONCURRENCY', 'DJANGO_SETTINGS_MODULE', 'GUNICORN_LOG_LEVEL']
+--------------------------------------------
+Chart.yaml
+--------------------------------------------
+[]
+--------------------------------------------
+values-qa-mm.yaml
+--------------------------------------------
+['WEB_CONCURRENCY', 'DJANGO_SETTINGS_MODULE', 'GUNICORN_LOG_LEVEL']
+```
