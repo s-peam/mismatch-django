@@ -26,8 +26,8 @@ This code is written in Python and aims to search for specific patterns and extr
 
 **5. Comparing and Printing Results**:
 - The code compares the key names found in the YAML files (**`env_vars`**) with the key names extracted from the Python files (**`matching_keys`**).
-- It generates a list **`main_list`** containing the key names found in the YAML files but not in the Python files.
-- The code then prints the list **`main_list`** for each YAML file processed.
+- It generates a list **`mismatch_list`** containing the key names found in the YAML files but not in the Python files.
+- The code then prints the list **`mismatch_list`** for each YAML file processed.
 
 ## Usage
 1. Update the **`directory`** variable in the code to specify the directory path you want to search in.
